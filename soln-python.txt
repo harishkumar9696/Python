@@ -229,3 +229,56 @@ vow_fn(input_str)
 ---------------------------------------------------------------
 
 
+'''
+Name:main.py 
+Description: calc
+Author:<harish>
+Version:0.1
+date:
+'''
+#FUNCTIONS
+def add_fn(a,b):
+    c=a+b
+    return(c)
+  
+def sub_fn(a,b):
+  c=a-b
+  return(c)
+  
+def mul_fn(a,b):
+  c=a*b
+  return(c)
+  
+def div_fn(a,b):
+  try:
+    c=a/b 
+  except:
+    print("cannot do such for division")
+  
+a=raw_input("enter the first number")
+b=raw_input("enter the second number")
+a=int(a)
+b=int(b)
+out=add_fn(a,b)
+out1=sub_fn(a,b)
+out2=mul_fn(a,b)
+out3=div_fn(a,b)
+print("Answer for add is ",out)
+print("Answer for sub is ",out1)
+print("Answer for multiply is ",out2)
+print("Answer for division is ",out3)
+
+------------------------------------
+def concatenate(s,a):
+    try:
+        st=s+a
+        return(st)
+    except Exception as e:
+        print e
+    
+s=raw_input("enter a string")
+a=raw_input("enter another string")
+out=concatenate(s,a)
+print(out)
+
+

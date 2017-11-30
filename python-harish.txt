@@ -562,5 +562,31 @@ def print_value(**a)
 print(a)
 
 print_value(name='abc',age='23')
+--------------------------------------------------------------------------
+#USES -> wont break out of loop rather exception and continue the code
 
+----------------------EXCEPTION HANDLING------------------
 
+try:	
+	print(1/0)
+except:
+	print("error")
+------------------------EXACT TYPE OF ERROR---------------------------
+try:	
+	print(1/0)
+except Exception as e:
+	print(e)
+-------------------sucess or failure some mesg-----
+### uses-seperate exception ofr seperate error 
+#IOerror or AssertionError orImportError instead of except Exception as e
+
+# for general exception error
+try:	
+	print(1/0)
+except Exception as e:  Exception
+	print(e)
+finally:
+     print("inside finally")
+     #sys.exit-> come out of the loop
+     print("came here")
+----------------------------------------------------------
