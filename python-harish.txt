@@ -1,0 +1,566 @@
+
+PYTHON
+
+open source
+platoform independent
+easy to install
+
+csc online helpdesk ->for installing python in cigna machines
+
+prefer  2.7.11 
+
+save extension 
+->.py
+
+IN WINDOWS
+
+cmd
+type python 
+
+the opening window is called idle
+
+https://repl.it
+
+CODE-> whatever instructions
+SYNTAX->certain set of standard instructions
+OUTPUT->mesgs printed
+CONSOLE->box in which output is printed
+
+
+editors
+
+notepad 
+notepad++
+sublime test
+atom
+netbeans
+
+
+declaring a variable
+variable name = value
+ex a=1
+
+--------ex-----------
+a = 'harish'
+
+print(a)
+
+print(type(a))
+
+----COMMENTING------------
+#->single line comments
+'''-> multiline 
+
+dir-> functions of variable
+id->memory location
+
+-----------MATHEMATICAL OPERATORS
+
+print(4+4)
+print(4-4)
+print(4*4)
+print(4/4)
+print(4%4)
+print(4**4)
+
+**->square 
+-------RELATIONAL OPERATORS
+==,!=,<,>,<=,>=in,not in
+
+print(1<3)
+print(1>3)
+print(1>=3)
+print(1<=3)
+print(1==1)
+print(1!=3)
+print('a'in'abc')
+print('a'not in 'abc')
+--------------------declaring
+
+b= 'harish'
+c="harish"
+d='''hewish'''
+e="""harish"""
+--------------for cases like don't--------
+
+
+a='i don\'t drink coffee'
+print(a)
+
+--or--
+a="i dont drink cofee"
+
+--------------getting value from user-----------
+
+n=raw_input("Enter a no:")
+print(n)
+
+-------
+
+for a string addition it concatenates
+string*2-> twice prints
+string*string=> error
+str+str=>concatenates
+
+---------------------STRING SLICING------------
+
+1)a="hello world"
+  a[7]=>'o'
+  a[0]=>'h'
+
+2)a[-1]=> from reverse where 'd'will be printed
+  a[0:5]=> hello
+  a[:8]=> defaut it will start with'h'
+  a[3:]=>end with end character
+  a[:]=> full 
+  a[2:-2]=> from start to last -1,-2 =>'llo wor'
+3)
+
+ a='hello world'
+ a[start:end:mulitple]
+  ex:
+ a[1:9:2]
+ start from 1 till 9 
+
+ and from that string multiples of 2 like places with 0,2,4,6,8 will be printed
+
+
+-----------use of fuctions--------------\\\\
+
+call using (variable name.function())
+
+
+-----LOGICAL-------------
+
+
+and
+or
+not
+
+
+------------IF ELSE------------
+IF conditions:
+<four spaces or tab> ----
+                     -----
+	            ------
+else:
+<four spaces or tab> -----
+                     ------
+
+
+
+**-->else is not mandatory
+    ex
+     a=0
+     if a==0:
+        print("a is zero")
+    else:
+        print("a is not zero")
+
+2)IF..ELIF..ELSE
+
+IF conditions:
+<four spaces or tab> ----
+                     -----
+	            ------
+elif:
+<four spaces or tab> -----
+                     ------
+else:
+<four spaces or tab> -----
+                     ------
+**=> else is mandatory 
+
+3)nested if 
+IF conditions:
+<four spaces or tab> ----
+                     -----
+	            ------
+<four spaces or tab> if conditions2: -----
+                                     ------
+else:
+<four spaces or tab> -----
+                     ----
+
+
+**=> to conver a='18'
+ into int b=int(a)
+
+
+----------LIST----- 
+declaring
+
+mylist[1,2,3,4]
+=>print mylist[1]
+=>mylist[1:3]
+
+-----append---
+mylist.append()
+->appends element to the last
+
+------extend---(appends a big list)--
+mylist.extend(40,50,.."amm")
+------insert----
+mylist.insert(0,'anu')
+
+----POP-------(deltes the last element from the list)----
+mylist.pop()
+
+----DELETE-----(delete specific position,index as argument )
+
+del mylist[1]
+
+------remove-------(delete specific position,value as argument)
+
+remove mylist['r']
+
+-------sort----
+
+
+->cmp(list 1,list 2)--- IF SUB IS POSSIBLE RETURNS 1 ELSE -1
+->len(list)----
+->max(list)-----MAXIMUM VALUE FROM THE LIST
+->min(list)
+
+**************************TUPLES--->()--->CANT ADD OR DELETE ELEMENT
+-->INDEX,COUNT
+ 
+----------------FOR
+
+FOR variable in list/tuple/dict:
+<4spaces> print variablename
+
+ex:
+l=[1,2,3,4,5]
+for i in l:
+    print(i)
+
+for i in l[1:3]
+    print(i)
+
+\if 10 times 
+
+a=1
+
+for i in range(10)
+    print(a) 
+
+-+--+-+-+-+-+-+ENUMERATE-+-+-+=>both the index value and the character
+l=['a','b','c','d','e']   
+
+for i,j in enumerate(l):
+    print(i,j)
+
+output
+0,'a'
+1,'b'
+etc
+
+ex:
+
+strlist=['a','b','c','d','e','f']
+
+for inpstr in strlist
+ <4spaces> if inpstr in['a','e','i','o','u']:
+           <4spaces> print("vowel"+str(inpstr))
+           else 
+                     print("not a vowel"+str(inpstr))
+
+**********************while loop************************
+
+while condition:
+ ---------------
+---------------
+------------------
+
+
+
+example:
+
+a=0
+while a<=5:
+ print(a)
+a=a+1
+
+example: 
+ flag=true
+ count=1
+ while flag:
+    print(count)
+    count=count+1
+    if count==10:
+        flag=false
+
+** keyword =>break
+
+
+
+========Dictionary--------------------
+
+d={k:v}-> keys,values
+
+adding an element to dictionary
+
+d[k]=v
+
+ex
+d[6]=7
+{6:7}
+
+keys->position 
+
+if present it ll update if not it ll be added 
+
+-->> print keys----print(d.keys())
+-->> print values----print(d.values())
+ ---->>delete   del d[1]
+    muliple inside loop dictionary is possible 
+
+ex:
+
+user_dict={'harish@gmail.com':{'name':'harish','city':'chennai'},
+            'abc@gmail.com':{'name':'abc','city':'chennai'}
+
+user_dict['xyz@gmail.com']={'name':'xyz','city':'chennai'}
+
+print(user_dict[harish@gmail.com][city])
+
+
+=============================FOR UPDATING USING INDEX
+stud_dict={'stud1':[78,89,79],'stud2':[78,88,60]}
+print(stud_dict['stud1'][1])
+stud_dict['stud1'][1]=100
+print(stud_dict)
+
+---------FOR LOOP-----
+
+d={1:3,4:4}
+for k,v in d.items():
+  print(k,v)
+
+--------------------for loop inside for loop -------------
+
+stud_dict={'stud1':[78,89,79],'stud2':[78,88,60]}
+print(stud_dict['stud1'][1])
+stud_dict['stud1'][1]=100
+print(stud_dict)
+
+for k,v in stud_dict.items():
+    for i in v:
+      print(k,i)
+
+-------------------------TO SEPERATE VALUES-------------
+user_dict={'harish@gmail.com':{'name':'harish','city':'chennai'},'abc@gmail.com':{'name':'abc','city':'chennai'}}
+print(user_dict)
+user_dict['abc@gmail.com']['city']='bangalore'
+print(user_dict)
+user_dict['xyz@gmail.com']={'name':'xyz','city':'chennai'}
+print(user_dict['harish@gmail.com'])
+
+
+
+
+for mail_id,data_dict in user_dict.items():
+  for k,v in data_dict.items():
+    print(mail_id,k,v)
+
+
+-----------------------------SETS--------------------------
+
+myset={1,2,3,4}
+myset add{5}
+myset update{6,7,8}
+
+
+myset1={4,5,6,7,8}   
+myset={1,2,3,4}
+myset.add(5)
+print(dir(myset))
+
+------union----
+print(myset.union(myset1))
+
+INTERSECT
+same using intersect keyword
+
+----------------FILES-------------
+
+r,rb,r+,rb+  ->read only, read binary, read and write, in binary
+w,wb,w+,wb+  ->write only, 
+a,ab,a+,ab+ (append)
+
+syntax:
+
+file_obj = open('input.sql','r')
+data=file_obj.read()
+print(data)
+print(type(data))
+file_obj.close()
+
+---diff b/w read and read lines is that read lines will be in the form of list 
+
+
+file_obj = open('input.sql','r')
+data=file_obj.readlines()
+print(data[0].strip('\n'))
+print(type(data))
+file_obj.close()
+
+-------to write
+
+file_obj = open('input.sql','w')
+data=file_obj.write('Hello world')
+file_obj.close()
+-----append
+
+file_obj = open('input.sql','a')
+data=file_obj.write('Hello world')
+file_obj.close()
+------------
+
+
+--------------------#FUNCTIONS
+def add_fn():
+  c=a+b
+  print(c)  #if return in function funcn has to be stored in a var and then     #printed 
+  
+a=6
+b=5
+add_fn()
+------------------------
+python doc strings
+'''
+Name:
+description:
+author:
+version:
+date:
+
+'''
+-------
+
+===================#FUNCTIONS with arguments============
+def add_fn(a,b):
+  c=a+b
+  return(c)
+  
+def sub_fn(a,b):
+  c=a-b
+  retun(c)
+  
+out=add_fn(5,6)
+print(out)
+#arguments name need not be the same 
+-----------------------vowel or not -----------------
+
+
+'''
+Name:main.py 
+Description: vowel
+Author:<harish>
+Version:0.1
+date:
+'''
+def vow_fn(input_str):
+  if input_str in['a','e','i','o','u']:
+    print("It is a vowel")
+  else:
+    print("It is not a vowel")
+    
+input_str=raw_input("enter a letter")
+vow_fn(input_str) 
+---------------------------------------------------------------
+
+def vow_fn(input_str,vowel_list=['a','e','i','o','u']):
+  if input_str in vowel_list:
+    print("It is a vowel")
+  else:
+    print("It is not a vowel")
+    
+input_str=raw_input("enter a letter")
+vow_fn(input_str) 
+
+---------------------------------------------------------------
+
+#FUNCTIONS
+def add_fn():
+  c=a+b
+  return(c)
+  
+def add_fn(a,b):   #error -> cos only the second will be there 
+  c=a-b
+  return(c)
+  
+out=add_fn()
+print(out)
+
+-----------------------MODULES-------------------------
+********Internal modules****
+- os
+- sys
+-re
+subprocess
+csv
+datetime
+time
+
+ex:
+import os
+print(dir(os))
+
+***** external modules****
+selenium ,etc
+
+#wont come by default
+
+*****external module installation***
+#in cmd prompt window
+pip install selenium
+pip uninstall <module name>
+# it will directed to pypi webpage and from there it ll download 
+
+
+
+
+--------datetime-----
+
+import datetime
+now_date = datetime.datetime.now()
+print(now_date)
+update_format=now_date.strftime
+("%d_%m_%Y_%M_%s")
+print(update_format)
+
+
+
+----------------
+
+in functions after function
+
+if __name__=="__main__":
+
+#diff is while running in idle while importing it wont show output rather it ll import
+
+
+obj=open(update_format+'.txt,'w')
+obj.write("string")
+obj.close
+-----------------SYSTEM OS-------------
+
+import os
+os.system('python test.py')
+os.system('ls')
+print(os.getcwd())
+
+-------PRINTING AS TUPLES OR GROUP----------
+def print_value(*a)
+print(a)
+
+print_value(1,2,3,4,5,6,7,8)
+................PRINTING AS DICTIONARY..............
+def print_value(**a)
+print(a)
+
+print_value(name='abc',age='23')
+
+

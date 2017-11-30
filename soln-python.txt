@@ -1,0 +1,231 @@
+==PROBLEMS--
+1--get a first name and last name from user and print your full name
+
+a=raw_input("Enter your first name")
+b=raw_input("enter your last name")
+print("The full name is ")
+print(a+b)
+
+2--get full name and age as input from user and print first name and last name
+
+a=raw_input("enter your full name")
+
+b=raw_input("enter your age")
+
+print("first name and last name is:")
+
+print(str.split(a))
+
+
+if b>18:
+    
+	print("Eligible to vote")	
+
+else:
+    
+	print("Not eligible to vote")
+
+3--string functions
+a=' harish kumar 
+'
+b='exam'
+print(dir(a))
+
+print(a.upper())
+
+print(a.lower())
+
+print(a.capitalize())
+
+print(a.center(4,'a'))
+
+print(a.swapcase())
+
+print(a.index('i'))
+
+print(a.count('i'))
+
+print(a.title())
+
+print(a.strip())
+
+print(a.lstrip())
+
+print(a.rstrip())
+
+print(str.split(a))
+
+print(a.startswith('h'))
+
+print(a.endswith(' '))
+
+print(a.islower())
+
+
+
+4--
+
+a=raw_input("Enter first number")
+
+b=raw_input("Enter second number")
+
+c=raw_input("Enter third number")
+
+a=int(a)
+
+b=int(b)
+
+c=int(c)
+
+if a==b or b==c or c==a:
+    
+print("The sum is")
+    
+print(0)
+else:
+    
+print(a+b+c)
+
+5.y=raw_input("enter a year")
+b=int(y)
+if b%400==0:
+   print(" it is a leap year")
+else:
+   print("it is not a leap year")
+
+
+
+6.year = raw_input("Please Enter the Year Number you wish: ")
+year=int(year) 
+if year%400 == 0 or  year%4 == 0  and year%100 != 0:
+    print("%s Leap Year" %year)
+else:
+    print("%s Not the Leap Year" %year)
+
+b=[26,'/',11,'/',1996]
+b.pop(1)
+b.pop(2)
+print(b)
+c=sum(b)
+print(c)
+
+year = raw_input("Please Enter the Year Number you wish: ")
+year=int(year) 
+if year%400 == 0 or  year%4 == 0  and year%100 != 0:
+    print("%s Leap Year" %year)
+else:
+    print("%s Not the Leap Year" %year)
+
+
+a=['H','e','l','l','o','w','o','r','l','d']
+count1=0
+count2=0
+for i in a:
+  if i.isupper():
+    count1=count1+1
+  elif i.islower():
+    count2=count2+1
+print("Uppercase:") 
+print(count1)
+print("Lowercase:")
+print(count2)
+ 
+ 
+ 
+username=['A','c',1,2,3]
+for i in username:
+  if i in('A','c',1,2,3):
+    print("valid username"+str(username))
+    #print(username)
+  else:
+   print("invalid username"+str(username)
+)
+
+
+-----soln----
+
+inventory = {'gold' : 500,'pouch' : ['flint', 'twine', 'gemstone'],'backpack' : ['xylophone','dagger', 'bedroll','bread loaf']}
+#print(inventory)
+inventory['pocket']=['seashell', 'strange berry', 'lint']
+inventory['backpack'].sort()
+print(inventory)
+inventory['backpack'].remove('dagger')
+print(inventory)
+inventory['gold']=(inventory['gold']+50)
+print(inventory)
+'''
+
+stud1={'student1':[10,20,30],'student2':[40,50,60]}
+sum=(stud1['student1'][0]+stud1['student1'][1]+stud1['student1'][2])
+avg=sum/3
+print(avg)
+
+----- write marks for four subs and split only the marks and add)
+obj=open('marks.txt','r')
+data_list=obj.readlines()
+print(data_list)
+temp=0
+for i in data_list:
+    str_list=i.split('=')
+    print(str_list)
+    no=str_list[1].strip().strip('\n')
+    temp= temp+int(no)
+    print(temp)
+
+    obj.close()
+
+
+
+---------------------#FUNCTIONS
+def add_fn():
+  c=a+b
+  print(c)  #if return in function funcn has to be stored in a var and then     #printed 
+  
+a=6
+b=5
+add_fn()
+------------------------
+python doc strings
+'''
+Name:
+description:
+author:
+version:
+date:
+
+'''
+-------
+
+===================#FUNCTIONS with arguments============
+def add_fn(a,b):
+  c=a+b
+  return(c)
+  
+def sub_fn(a,b):
+  c=a-b
+  retun(c)
+  
+out=add_fn(5,6)
+print(out)
+#arguments name need not be the same 
+-----------------------vowel or not -----------------
+
+
+'''
+Name:main.py 
+Description: vowel
+Author:<harish>
+Version:0.1
+date:
+'''
+def vow_fn(input_str):
+  if input_str in['a','e','i','o','u']:
+    print("It is a vowel")
+  else:
+    print("It is not a vowel")
+    
+input_str=raw_input("enter a letter")
+vow_fn(input_str) 
+---------------------------------------------------------------
+
+
